@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Heart to Heart Organization</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Heart to Heart Logo">
+                <div class="logo-text">Heart to <span>Heart</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="programs/education.html">Education</a>
+                            <a href="programs/feeding.html">Feeding Program</a>
+                            <a href="programs/empowerment.html">Self-Empowerment</a>
+                            <a href="programs/kipawa.html">Kipawa Sato</a>
+                            <a href="programs/support.html">Support Groups</a>
+                            <a href="programs/christmas.html">Christmas Food Basket</a>
+                        </div>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kibera Slums, Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+254 700 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@hearttoheart.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.815214953854!2d36.78195031475396!3d-1.302859999050814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d50a0b7b8b%3A0x8b5c2b5c2b5c2b5c!2sKibera%20Slum!5e0!3m2!1sen!2ske!4v1623456789012!5m2!1sen!2ske" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Heart to Heart</h3>
+                    <p>Transforming lives in Kibera and Kawangware through education, nutrition, and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs/education.html">Education</a></li>
+                        <li><a href="programs/feeding.html">Feeding Program</a></li>
+                        <li><a href="programs/empowerment.html">Self-Empowerment</a></li>
+                        <li><a href="programs/kipawa.html">Kipawa Sato</a></li>
+                        <li><a href="programs/support.html">Support Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kibera, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@hearttoheart.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Heart to Heart Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

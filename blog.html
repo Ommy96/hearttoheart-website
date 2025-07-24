@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Heart to Heart Organization</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Heart to Heart Logo">
+                <div class="logo-text">Heart to <span>Heart</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="programs/education.html">Education</a>
+                            <a href="programs/feeding.html">Feeding Program</a>
+                            <a href="programs/empowerment.html">Self-Empowerment</a>
+                            <a href="programs/kipawa.html">Kipawa Sato</a>
+                            <a href="programs/support.html">Support Groups</a>
+                            <a href="programs/christmas.html">Christmas Food Basket</a>
+                        </div>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1>News & Stories</h1>
+            <p>Updates from our community</p>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Blog Posts</h2>
+                <p>Stories from our community</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="blog-content">
+                        <span class="date">June 5, 2023</span>
+                        <h3>New School Building Opens in Kibera</h3>
+                        <p>Thanks to our donors, we've opened a new classroom block that will serve 200 additional students.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1526662092153-1b41b9e1d8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="blog-content">
+                        <span class="date">May 28, 2023</span>
+                        <h3>Feeding Program Reaches Milestone</h3>
+                        <p>Our daily feeding program has now served over 100,000 meals to children in our community.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="blog-content">
+                        <span class="date">May 15, 2023</span>
+                        <h3>Youth Vocational Training Success Stories</h3>
+                        <p>Five young people from our program have secured employment after completing our tailoring course.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="blog-content">
+                        <span class="date">April 22, 2023</span>
+                        <h3>International Earth Day Community Cleanup</h3>
+                        <p>Over 200 volunteers joined us for a neighborhood cleanup and environmental education day.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1524185962-89a8c3ec9ba1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="blog-content">
+                        <span class="date">March 8, 2023</span>
+                        <h3>Empowering Women This International Women's Day</h3>
+                        <p>Our women's empowerment group launched a new savings and loan program for female entrepreneurs.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="blog-content">
+                        <span class="date">December 20, 2022</span>
+                        <h3>Christmas Food Basket Distribution Success</h3>
+                        <p>We distributed over 800 food baskets to families in need during our annual holiday program.</p>
+                        <a href="#" class="btn btn-outline">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive updates on our programs and how you can help.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Heart to Heart</h3>
+                    <p>Transforming lives in Kibera and Kawangware through education, nutrition, and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs/education.html">Education</a></li>
+                        <li><a href="programs/feeding.html">Feeding Program</a></li>
+                        <li><a href="programs/empowerment.html">Self-Empowerment</a></li>
+                        <li><a href="programs/kipawa.html">Kipawa Sato</a></li>
+                        <li><a href="programs/support.html">Support Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kibera, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@hearttoheart.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Heart to Heart Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

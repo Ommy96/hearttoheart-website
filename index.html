@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart to Heart Organization - Transforming Lives in Kibera</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Heart to Heart Logo">
+                <div class="logo-text">Heart to <span>Heart</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="programs/education.html">Education</a>
+                            <a href="programs/feeding.html">Feeding Program</a>
+                            <a href="programs/empowerment.html">Self-Empowerment</a>
+                            <a href="programs/kipawa.html">Kipawa Sato</a>
+                            <a href="programs/support.html">Support Groups</a>
+                            <a href="programs/christmas.html">Christmas Food Basket</a>
+                        </div>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Video Hero Section -->
+    <section class="video-hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-african-children-walking-in-a-village-4208-large.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Transforming Lives in the Heart of Kibera</h1>
+            <p>We empower vulnerable children and families in Kibera and Kawangware through education, nutrition, and community support programs.</p>
+            <div class="hero-btns">
+                <a href="#donate" class="btn btn-primary">Donate Now</a>
+                <a href="get-involved.html" class="btn btn-outline">Sponsor a Child</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Programs</h2>
+                <p>Discover how we're making a difference in our community</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-img" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="program-content">
+                        <h3>Education</h3>
+                        <p>Providing school fees, uniforms, and learning materials to ensure children receive quality education.</p>
+                        <a href="programs/education.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-img" style="background-image: url('https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="program-content">
+                        <h3>Feeding Program</h3>
+                        <p>Nutritious meals for children in Kibera Early Dinner and Kawangware Lunch Hour programs.</p>
+                        <a href="programs/feeding.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="program-content">
+                        <h3>Self-Empowerment</h3>
+                        <p>Vocational training and skills development for youth and adults to create sustainable livelihoods.</p>
+                        <a href="programs/empowerment.html" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section style="background-color: #f0f4f8;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Impact</h2>
+                <p>See the difference we're making in our community</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Children in class">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1526662092153-1b41b9e1d8d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Community meal">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1524185962-89a8c3ec9ba1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Volunteers">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Graduation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Stories of Hope</h2>
+                <p>Hear from those whose lives we've touched</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Beneficiary">
+                    <p>"Thanks to Heart to Heart, my daughter can now attend school. She dreams of becoming a doctor now!"</p>
+                    <div class="name">- Mary Wambui, Kibera</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section style="background-color: #fff9e6;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sponsor a Child</h2>
+                <p>Change a life through education and support</p>
+            </div>
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Child">
+                    <h3>Amina, 10</h3>
+                    <p>Needs school fees and uniform</p>
+                    <a href="get-involved.html" class="btn btn-accent">Sponsor Me</a>
+                </div>
+                <div class="sponsor-card">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Child">
+                    <h3>Juma, 12</h3>
+                    <p>Needs school supplies and meals</p>
+                    <a href="get-involved.html" class="btn btn-accent">Sponsor Me</a>
+                </div>
+                <div class="sponsor-card">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Child">
+                    <h3>Grace, 9</h3>
+                    <p>Needs school fees and medical support</p>
+                    <a href="get-involved.html" class="btn btn-accent">Sponsor Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive updates on our programs and how you can help.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Heart to Heart</h3>
+                    <p>Transforming lives in Kibera and Kawangware through education, nutrition, and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs/education.html">Education</a></li>
+                        <li><a href="programs/feeding.html">Feeding Program</a></li>
+                        <li><a href="programs/empowerment.html">Self-Empowerment</a></li>
+                        <li><a href="programs/kipawa.html">Kipawa Sato</a></li>
+                        <li><a href="programs/support.html">Support Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kibera, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@hearttoheart.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Heart to Heart Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+        <a href="https://wa.me/254700123456" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

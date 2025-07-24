@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Heart to Heart Organization</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Heart to Heart Logo">
+                <div class="logo-text">Heart to <span>Heart</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="programs/education.html">Education</a>
+                            <a href="programs/feeding.html">Feeding Program</a>
+                            <a href="programs/empowerment.html">Self-Empowerment</a>
+                            <a href="programs/kipawa.html">Kipawa Sato</a>
+                            <a href="programs/support.html">Support Groups</a>
+                            <a href="programs/christmas.html">Christmas Food Basket</a>
+                        </div>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1>Make a Donation</h1>
+            <p>Your support transforms lives in our community</p>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Support Our Mission</h2>
+                <p>Choose how you'd like to contribute</p>
+            </div>
+            <div class="donation-form-container">
+                <form id="donation-form">
+                    <h3 style="margin-bottom: 20px; color: var(--dark);">Select Payment Method</h3>
+                    <div class="payment-methods">
+                        <div class="payment-method active" data-method="paypal">
+                            <i class="fab fa-paypal"></i>
+                            <div>PayPal</div>
+                        </div>
+                        <div class="payment-method" data-method="mpesa">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>M-Pesa</div>
+                        </div>
+                        <div class="payment-method" data-method="card">
+                            <i class="fas fa-credit-card"></i>
+                            <div>Credit Card</div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-details active" data-method="paypal">
+                        <h4>PayPal Payment</h4>
+                        <p>Secure payment through PayPal. You can use your PayPal account or pay with a credit card.</p>
+                        <!-- PayPal form would go here -->
+                    </div>
+                    
+                    <div class="payment-details" data-method="mpesa">
+                        <h4>M-Pesa Payment</h4>
+                        <p>Pay directly using your M-Pesa mobile money account.</p>
+                        <div class="form-group">
+                            <label for="mpesa-phone">M-Pesa Phone Number</label>
+                            <input type="tel" id="mpesa-phone" placeholder="e.g. 0712345678">
+                        </div>
+                        <p>After submitting, you'll receive an M-Pesa prompt to complete your payment.</p>
+                    </div>
+                    
+                    <div class="payment-details" data-method="card">
+                        <h4>Credit Card Payment</h4>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="123">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-name">Name on Card</label>
+                            <input type="text" id="card-name" placeholder="John Doe">
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin: 30px 0 20px; color: var(--dark);">Select Donation Amount</h3>
+                    <div class="amount-options">
+                        <div class="amount-option selected">$10</div>
+                        <div class="amount-option">$25</div>
+                        <div class="amount-option">$50</div>
+                        <div class="amount-option">$100</div>
+                        <div class="amount-option">$250</div>
+                    </div>
+                    <div class="custom-amount">
+                        <span>Or enter custom amount:</span>
+                        <input type="number" id="custom-amount" placeholder="$0.00" min="1">
+                    </div>
+                    
+                    <div class="form-group" style="margin-top: 30px;">
+                        <label for="donor-name">Your Name (Optional)</label>
+                        <input type="text" id="donor-name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-email">Email (Optional)</label>
+                        <input type="email" id="donor-email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="donor-message">Message (Optional)</label>
+                        <textarea id="donor-message" placeholder="Your message of support..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">Donate Now</button>
+                </form>
+            </div>
+            
+            <div style="max-width: 800px; margin: 40px auto 0; text-align: center;">
+                <h3 style="color: var(--dark); margin-bottom: 20px;">Why Your Donation Matters</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="number">$10</div>
+                        <div class="label">Feeds a child for a week</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">$25</div>
+                        <div class="label">Provides school supplies</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">$50</div>
+                        <div class="label">Supports vocational training</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">$100</div>
+                        <div class="label">Sponsors a child for a month</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Heart to Heart</h3>
+                    <p>Transforming lives in Kibera and Kawangware through education, nutrition, and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs/education.html">Education</a></li>
+                        <li><a href="programs/feeding.html">Feeding Program</a></li>
+                        <li><a href="programs/empowerment.html">Self-Empowerment</a></li>
+                        <li><a href="programs/kipawa.html">Kipawa Sato</a></li>
+                        <li><a href="programs/support.html">Support Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kibera, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@hearttoheart.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Heart to Heart Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

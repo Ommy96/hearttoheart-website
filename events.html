@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Heart to Heart Organization</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Heart to Heart Logo">
+                <div class="logo-text">Heart to <span>Heart</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="programs/education.html">Education</a>
+                            <a href="programs/feeding.html">Feeding Program</a>
+                            <a href="programs/empowerment.html">Self-Empowerment</a>
+                            <a href="programs/kipawa.html">Kipawa Sato</a>
+                            <a href="programs/support.html">Support Groups</a>
+                            <a href="programs/christmas.html">Christmas Food Basket</a>
+                        </div>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html" class="active">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1>Upcoming Events</h1>
+            <p>Join us in our community activities</p>
+        </div>
+    </section>
+
+    <!-- Events Calendar -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Community Events</h2>
+                <p>Participate in our upcoming activities</p>
+            </div>
+            <div class="events-grid">
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">15</div>
+                        <div class="month">JUN</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Community Health Day</h3>
+                        <span class="time">9:00 AM - 3:00 PM</span>
+                        <p>Free health screenings, vaccinations, and health education for families in Kibera.</p>
+                        <a href="#" class="btn btn-secondary" onclick="openVolunteerForm()">Register to Volunteer</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">20</div>
+                        <div class="month">JUL</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Back to School Campaign</h3>
+                        <span class="time">10:00 AM - 4:00 PM</span>
+                        <p>Distribution of school supplies, uniforms, and backpacks to children in our program.</p>
+                        <a href="#" class="btn btn-secondary" onclick="openVolunteerForm()">Register to Volunteer</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">20</div>
+                        <div class="month">DEC</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Christmas Food Basket Distribution</h3>
+                        <span class="time">8:00 AM - 2:00 PM</span>
+                        <p>Annual distribution of food baskets to families in need during the holiday season.</p>
+                        <a href="#" class="btn btn-secondary" onclick="openVolunteerForm()">Register to Volunteer</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">10</div>
+                        <div class="month">MAR</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>International Women's Day Celebration</h3>
+                        <span class="time">2:00 PM - 5:00 PM</span>
+                        <p>Empowerment workshop and celebration for women in our community.</p>
+                        <a href="#" class="btn btn-secondary" onclick="openVolunteerForm()">Register to Volunteer</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">05</div>
+                        <div class="month">MAY</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Youth Leadership Summit</h3>
+                        <span class="time">9:00 AM - 4:00 PM</span>
+                        <p>Leadership training and team building for youth in our Kipawa Sato program.</p>
+                        <a href="#" class="btn btn-secondary" onclick="openVolunteerForm()">Register to Volunteer</a>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">
+                        <div class="day">18</div>
+                        <div class="month">AUG</div>
+                    </div>
+                    <div class="event-content">
+                        <h3>Harvest Festival</h3>
+                        <span class="time">11:00 AM - 6:00 PM</span>
+                        <p>Celebrating our community's achievements with music, dance, and local food.</p>
+                        <a href="#" class="btn btn-secondary" onclick="openVolunteerForm()">Register to Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Heart to Heart</h3>
+                    <p>Transforming lives in Kibera and Kawangware through education, nutrition, and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs/education.html">Education</a></li>
+                        <li><a href="programs/feeding.html">Feeding Program</a></li>
+                        <li><a href="programs/empowerment.html">Self-Empowerment</a></li>
+                        <li><a href="programs/kipawa.html">Kipawa Sato</a></li>
+                        <li><a href="programs/support.html">Support Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kibera, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@hearttoheart.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Heart to Heart Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Heart to Heart Organization</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Heart to Heart Logo">
+                <div class="logo-text">Heart to <span>Heart</span></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">What We Do <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="programs/education.html">Education</a>
+                            <a href="programs/feeding.html">Feeding Program</a>
+                            <a href="programs/empowerment.html">Self-Empowerment</a>
+                            <a href="programs/kipawa.html">Kipawa Sato</a>
+                            <a href="programs/support.html">Support Groups</a>
+                            <a href="programs/christmas.html">Christmas Food Basket</a>
+                        </div>
+                    </li>
+                    <li><a href="get-involved.html">Get Involved</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <div class="language-switcher">
+                            <select id="language-select">
+                                <option value="en">English</option>
+                                <option value="sw">Swahili</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 40vh;">
+        <div class="hero-content">
+            <h1>Volunteer With Us</h1>
+            <p>Join our team and make a difference</p>
+        </div>
+    </section>
+
+    <!-- Volunteer Information -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Volunteer?</h2>
+                <p>Your time and skills can transform lives</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Volunteering with Heart to Heart Organization is a rewarding way to make a direct impact in the lives of vulnerable children and families in Kibera and Kawangware.</p>
+                    <p>Our volunteers bring diverse skills and perspectives that enhance our programs and help us reach more people in need. Whether you're passionate about education, nutrition, or community development, we have opportunities for you.</p>
+                    <p>Volunteers gain valuable experience working in community development, build meaningful relationships, and contribute to sustainable change in one of Nairobi's most underserved communities.</p>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1524185962-89a8c3ec9ba1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Volunteers">
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2>Volunteer Opportunities</h2>
+                <p>Find a role that matches your skills and interests</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-img" style="background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="program-content">
+                        <h3>Education Support</h3>
+                        <p>Tutor students, assist with homework, or teach special skills.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-img" style="background-image: url('https://images.unsplash.com/photo-1519817914152-22d216bb9170?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="program-content">
+                        <h3>Feeding Program</h3>
+                        <p>Help prepare and distribute meals to children.</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-img" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80');"></div>
+                    <div class="program-content">
+                        <h3>Skills Training</h3>
+                        <p>Share your expertise in tailoring, hairdressing, or business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Registration -->
+    <section style="background-color: #f0f4f8;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Apply to Volunteer</h2>
+                <p>Join our dedicated team of volunteers</p>
+            </div>
+            <div class="form-container">
+                <form id="volunteer-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills/Interests</label>
+                        <textarea id="skills" placeholder="Teaching, cooking, construction, etc."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Availability</label>
+                        <select id="availability">
+                            <option>Weekends</option>
+                            <option>Weekdays</option>
+                            <option>Evenings</option>
+                            <option>Flexible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why do you want to volunteer?</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Heart to Heart</h3>
+                    <p>Transforming lives in Kibera and Kawangware through education, nutrition, and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Programs</h3>
+                    <ul>
+                        <li><a href="programs/education.html">Education</a></li>
+                        <li><a href="programs/feeding.html">Feeding Program</a></li>
+                        <li><a href="programs/empowerment.html">Self-Empowerment</a></li>
+                        <li><a href="programs/kipawa.html">Kipawa Sato</a></li>
+                        <li><a href="programs/support.html">Support Groups</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Kibera, Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> +254 700 123 456</li>
+                        <li><i class="fas fa-envelope"></i> info@hearttoheart.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Heart to Heart Organization. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
